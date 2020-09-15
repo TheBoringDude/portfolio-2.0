@@ -1,0 +1,10 @@
+@tailwind base;
+
+.showcase-header {
+  background: url(static/bg.JPG) rgba(0, 0, 0, 0.6);
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+@tailwind components;
+@tailwind utilities;

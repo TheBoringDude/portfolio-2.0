@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% if description %}
+        <meta name="description" content="{{description}}">
+    {% endif %}
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}
+    {% endblock title %} | Joshue Abance</title>
+    <link rel="stylesheet" href="/style.css?v={% version %}"/>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tonsky/FiraCode@4/distr/fira_code.css">
+    <script src="/js/alpine.js?v={% version %}"></script>
+</head>
+<body class="antialiased w-full h-full">
+    <header class="bg-greener py-4" x-data="{ navbar: false }">
+        <div class="w-11/12 md:w-5/6 mx-auto flex flex-col md:flex-row items-center justify-between">
+            <!-- header content -->
+            {% include "header.njk" %}
+
+            <!-- navigation menu -->
+            {% include "navbar.njk" %}
+        </div>
+    </header>
+
+    <!-- main content -->
+    {% block content %}
+        {{ content | safe }}
+    {% endblock %}
+
+    <!-- footer -->
+    {% include "footer.njk" %}
+</body>
+</html>
