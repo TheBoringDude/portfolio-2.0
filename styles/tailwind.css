@@ -1,7 +1,25 @@
 @tailwind base;
 
-.showcase-header {
-  background: url(static/bg.JPG) rgba(0, 0, 0, 0.6);
+.about-header{
+  background: url(static/images/bg.JPG) rgba(0, 0, 0, 0.9);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+}
+
+.hobbies-header{
+  background: url(static/images/hobbies.jpg) rgba(0, 0, 0, 0.7);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+}
+.contact-header{
+  background: url(static/images/contact.jpg) rgba(0, 0, 0, 0.8);
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+.main-header{
+  background: url(static/images/showcase.jpg) rgba(0, 0, 0, 0.7);
   background-blend-mode: multiply;
   background-size: cover;
 }

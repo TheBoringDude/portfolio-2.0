@@ -1,4 +1,8 @@
 module.exports = {
+  future: {
+    // removeDeprecatedGapUtilities: true,
+    // purgeLayersByDefault: true,
+  },
   purge: [],
   target: 'relaxed',
   prefix: '',
@@ -6,7 +10,8 @@ module.exports = {
   separator: ':',
   theme: {
     screens: {
-      sm: '425px',
+      xs: '425px',
+      sm: '640px',
       md: '768px',
       lg: '1024px',
       xl: '1280px',
@@ -18,11 +23,11 @@ module.exports = {
       black: '#000',
       white: '#fff',
 
-      dark: '#003542',
-      darker: '#001D29',
-      middle: '#015956',
-      greener: '#037469',
-      lightgreen: '#79A392',
+      'dark-gray': '#1C1E1F',
+      'mid-gray': '#939B9D',
+      'light-gray': '#C8CDCE',
+      'main-blue': '#00B6EA',
+      bland: 'rgba(0, 0, 0, 0.5)',
 
       gray: {
         100: '#f7fafc',
@@ -249,23 +254,7 @@ module.exports = {
       default: '1',
     },
     fontFamily: {
-      sans: [
-        '"Source Sans Pro"',
-        '-apple-system',
-        'BlinkMacSystemFont',
-        '"Segoe UI"',
-        'Roboto',
-        '"Helvetica Neue"',
-        'Arial',
-        '"Noto Sans"',
-        'sans-serif',
-        '"Apple Color Emoji"',
-        '"Segoe UI Emoji"',
-        '"Segoe UI Symbol"',
-        '"Noto Color Emoji"',
-      ],
-      serif: ['Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
-      mono: ['"Fira Code"', 'Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
+      sans: ['"Source Sans Pro"', 'sans-serif'],
     },
     fontSize: {
       xs: '0.75rem',
@@ -775,7 +764,7 @@ module.exports = {
     rotate: ['responsive', 'hover', 'focus'],
     translate: ['responsive', 'hover', 'focus'],
     skew: ['responsive', 'hover', 'focus'],
-    transitionProperty: ['responsive', 'hover'],
+    transitionProperty: ['responsive'],
     transitionTimingFunction: ['responsive'],
     transitionDuration: ['responsive'],
     transitionDelay: ['responsive'],
