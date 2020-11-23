@@ -1,0 +1,36 @@
+{
+  "websites": [
+    {
+      "name": "film.ify",
+      "description": "A movie website design.",
+      "image": "filmify.png",
+      "source_code": "https://github.com/TheBoringDude/film.ify",
+      "url": "https://filmify.netlify.app/",
+      "status": "incomplete"
+    },
+    {
+      "name": "Team Barssity",
+      "description": "A movie website design.",
+      "image": "teambarssity.png",
+      "source_code": "https://github.com/TheBoringDude/film.ify",
+      "url": "https://www.team-barssity.cf/",
+      "status": "done"
+    },
+    {
+      "name": "Live Long Baguio",
+      "description": "Website for Live Long Cafe Baguio.",
+      "image": "teambarssity.png",
+      "source_code": "https://github.com/TheBoringDude/livelong_cafe",
+      "url": "https://livelong-baguio.netlify.app/",
+      "status": "done"
+    },
+    {
+      "name": "Live Long Baguio",
+      "description": "A design idea of the UC Baguio website.",
+      "image": "uc-concept.png",
+      "source_code": "https://github.com/TheBoringDude/uc-bcf_concept",
+      "url": "https://uc-bcf-concept.netlify.app/",
+      "status": "concept"
+    }
+  ]
+}

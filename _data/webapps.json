@@ -1,0 +1,76 @@
+{
+  "webapps": [
+    {
+      "name": "zeta",
+      "description": "A Collections Library App.",
+      "image": "zeta.png",
+      "source_code": "https://github.com/TheBoringDude/zeta",
+      "url": "https://zeta-library.herokuapp.com/",
+      "status": "done"
+    },
+    {
+      "name": "kuryana",
+      "description": "MDL Scraper API",
+      "image": "kuryana.png",
+      "source_code": "https://github.com/TheBoringDude/kuryana",
+      "url": "https://kuryana.vercel.app/",
+      "status": "done"
+    },
+    {
+      "name": "grue",
+      "description": "A Serverless URL Shortener.",
+      "image": "grue.png",
+      "source_code": "https://github.com/TheBoringDude/grue",
+      "url": "https://grue.cf/",
+      "status": "done"
+    },
+    {
+      "name": "klopp",
+      "description": "A Simple Public Tweeter.",
+      "image": "klopp.png",
+      "source_code": "https://github.com/TheBoringDude/klopp-serverless",
+      "url": "https://klopp.cf/",
+      "status": "done"
+    },
+    {
+      "name": "makeme.short",
+      "description": "A Flask url shortener.",
+      "image": "makemeshort.png",
+      "source_code": "https://github.com/TheBoringDude/makeme.short",
+      "url": "http://makeme-short.herokuapp.com/",
+      "status": "done"
+    },
+    {
+      "name": "Covid19-PH API",
+      "description": "A Covid19 PH Cases API.",
+      "image": "covid19ph.png",
+      "source_code": "https://github.com/TheBoringDude/covid19ph-api",
+      "url": "http://covid19ph-api.herokuapp.com/",
+      "status": "done"
+    },
+    {
+      "name": "my.Mood",
+      "description": "A simple SNS app built with Flask.",
+      "image": "mymood.png",
+      "source_code": "https://github.com/TheBoringDude/my.Mood",
+      "url": "http://mymood-me.herokuapp.com/home",
+      "status": "buggy"
+    },
+    {
+      "name": "gagger",
+      "description": "A basic Meme Api.",
+      "image": "gagger.png",
+      "source_code": "https://github.com/TheBoringDude/gagger",
+      "url": "http://gagger.herokuapp.com/",
+      "status": "incomplete"
+    },
+    {
+      "name": "geezer",
+      "description": "A simple random meme website.",
+      "image": "geezer.png",
+      "source_code": "https://github.com/TheBoringDude/geezer",
+      "url": "https://geezer.vercel.app/",
+      "status": "done"
+    }
+  ]
+}
