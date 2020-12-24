@@ -19,13 +19,13 @@
     {
       "name": "Live Long Baguio",
       "description": "Website for Live Long Cafe Baguio.",
-      "image": "teambarssity.png",
+      "image": "livelong.png",
       "source_code": "https://github.com/TheBoringDude/livelong_cafe",
       "url": "https://livelong-baguio.netlify.app/",
       "status": "done"
     },
     {
-      "name": "Live Long Baguio",
+      "name": "UC Baguio",
       "description": "A design idea of the UC Baguio website.",
       "image": "uc-concept.png",
       "source_code": "https://github.com/TheBoringDude/uc-bcf_concept",

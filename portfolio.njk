@@ -5,60 +5,62 @@
 {% block content %}
     <!-- portfolio contents -->
     <div class="portfolio-bg text-white w-full h-full mx-auto pt-4 pb-12">
-        <nav class="w-5/6 mx-auto flex items-center justify-around mb-4">
-            <h3 class="text-xl font-bold">Joshue Abance</h3>
-            <ul class="flex">
-                <li class="mr-8"><a href="/" class="text-lg font-light tracking-wide">About Me</a></li>
-                <li><a href="#" class="text-lg font-light tracking-wide">Blog</a></li>
-            </ul>
-        </nav>
-        <div class="text-center">
-            <h1 class="text-3xl font-black tracking-wide">My Works</h1>
-            <p class="text-xl font-light">Here are some of the projects and outputs I made :)</p>
-        </div>
-        <!-- projects showcase -->
-        <div class="py-4 w-11/12 xl:w-5/6 mx-auto">
-            <!-- web apps -->
-            <div class="py-4">
-                <h2 class="text-center text-xl font-black tracking-wide uppercase underline">Web Apps</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
-                    {% for project in webapps.webapps %}
-                        <div class="bg-bland flex flex-col xs:flex-row md:flex-col lg:flex-row items-center justify-center transform transition-transform duration-500 hover:scale-110">
-                            <img src="/projects/webapps/{{project.image}}" alt="zeta Library" class="w-full xs:w-40 h-32 lg:w-56 lg:h-40 xl:w-64 xl:h-48 md:w-full object-top object-cover">
-                            <div class="text-light-gray h-full w-full px-0 text-center md:text-center md:px-0 xs:text-left lg:text-left py-4 md:py-4 xs:py-0 lg:py-0 xs:px-3 lg:px-6">
-                                <a href="{{project.url}}" class="text-xl xl:text-2xl font-black tracking-wide hover:underline">{{project.name}} {% if project.status == "buggy" %}
-                                    <small class="text-red-800">({{project.status}})</small>
-                                {% elif project.status == "incomplete" %}
-                                    <small class="text-orange-800">({{project.status}})</small>
-                                {% endif %}</a>
-                                <p class="text-lg font-light px-4 my-2">{{project.description}}</p>
-                                <a href="{{project.source_code}}" type="button" class="py-1 px-6 uppercase text-sm tracking-wide bg-dark-gray hover:bg-black">Source Code</a>
-                            </div>
-                        </div>
-                    {% endfor %}
-                </div>
+        <div class="w-5/6 mx-auto">
+            <nav class="flex items-center justify-around mb-4">
+                <h3 class="text-xl font-bold">Joshue Abance</h3>
+                <ul class="flex">
+                    <li class="mr-8"><a href="/" class="text-lg font-light tracking-wide">About Me</a></li>
+                    <li><a href="https://creep-joshue.ml/" class="text-lg font-light tracking-wide">Blog</a></li>
+                </ul>
+            </nav>
+            <div class="text-center">
+                <h1 class="text-3xl font-black tracking-wide">My Works</h1>
+                <p class="text-xl font-light">Here are some of the projects and outputs I made :)</p>
             </div>
-            <hr class="border-mid-gray">
-            <!-- websites -->
+            <!-- projects showcase -->
             <div class="py-4">
-                <h2 class="text-center text-xl font-black tracking-wide uppercase underline">Websites</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
-                    {% for project in websites.websites %}
-                        <div class="bg-bland flex flex-col xs:flex-row md:flex-col lg:flex-row items-center justify-center transform transition-transform duration-500 hover:scale-110">
-                            <img src="/projects/websites/{{project.image}}" alt="zeta Library" class="w-full xs:w-40 h-32 lg:w-56 lg:h-40 xl:w-64 xl:h-48 md:w-full object-top object-cover">
-                            <div class="text-light-gray h-full w-full px-0 text-center md:text-center md:px-0 xs:text-left lg:text-left py-4 md:py-4 xs:py-0 lg:py-0 xs:px-3 lg:px-6">
-                                <a href="{{project.url}}" class="text-xl xl:text-2xl font-black tracking-wide hover:underline">{{project.name}} {% if project.status == "buggy" %}
-                                    <small class="text-red-800">({{project.status}})</small>
-                                {% elif project.status == "incomplete" %}
-                                    <small class="text-orange-800">({{project.status}})</small>
-                                {% elif project.status == "concept" %}
-                                    <small class="text-green-800">({{project.status}})</small>
-                                {% endif %}</a>
-                                <p class="text-lg font-light px-4 my-2">{{project.description}}</p>
-                                <a href="{{project.source_code}}" type="button" class="py-1 px-6 uppercase text-sm tracking-wide bg-dark-gray hover:bg-black">Source Code</a>
+                <!-- web apps -->
+                <div class="py-4">
+                    <h2 class="text-center text-xl font-black tracking-wide uppercase underline">Web Apps</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
+                        {% for project in webapps.webapps %}
+                            <div class="bg-bland flex flex-col xs:flex-row md:flex-col lg:flex-row items-center justify-center transform transition-transform duration-500 hover:scale-110">
+                                <img src="/projects/webapps/{{project.image}}" alt="zeta Library" class="w-full xs:w-40 h-32 lg:w-56 lg:h-40 xl:w-64 xl:h-48 md:w-full object-top object-cover">
+                                <div class="text-light-gray h-full w-full px-0 text-center md:text-center md:px-0 xs:text-left lg:text-left py-4 md:py-4 xs:py-0 lg:py-0 xs:px-3 lg:px-6">
+                                    <a href="{{project.url}}" class="text-xl xl:text-2xl font-black tracking-wide hover:underline">{{project.name}} {% if project.status == "buggy" %}
+                                        <small class="text-red-800">({{project.status}})</small>
+                                    {% elif project.status == "incomplete" %}
+                                        <small class="text-orange-800">({{project.status}})</small>
+                                    {% endif %}</a>
+                                    <p class="text-lg font-light px-4 my-2">{{project.description}}</p>
+                                    <a href="{{project.source_code}}" type="button" class="py-1 px-6 uppercase text-sm tracking-wide bg-dark-gray hover:bg-black">Source Code</a>
+                                </div>
                             </div>
-                        </div>
-                    {% endfor %}
+                        {% endfor %}
+                    </div>
+                </div>
+                <hr class="border-mid-gray">
+                <!-- websites -->
+                <div class="py-4">
+                    <h2 class="text-center text-xl font-black tracking-wide uppercase underline">Websites</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
+                        {% for project in websites.websites %}
+                            <div class="bg-bland flex flex-col xs:flex-row md:flex-col lg:flex-row items-center justify-center transform transition-transform duration-500 hover:scale-110">
+                                <img src="/projects/websites/{{project.image}}" alt="zeta Library" class="w-full xs:w-40 h-32 lg:w-56 lg:h-40 xl:w-64 xl:h-48 md:w-full object-top object-cover">
+                                <div class="text-light-gray h-full w-full px-0 text-center md:text-center md:px-0 xs:text-left lg:text-left py-4 md:py-4 xs:py-0 lg:py-0 xs:px-3 lg:px-6">
+                                    <a href="{{project.url}}" class="text-xl xl:text-2xl font-black tracking-wide hover:underline">{{project.name}} {% if project.status == "buggy" %}
+                                        <small class="text-red-800">({{project.status}})</small>
+                                    {% elif project.status == "incomplete" %}
+                                        <small class="text-orange-800">({{project.status}})</small>
+                                    {% elif project.status == "concept" %}
+                                        <small class="text-green-800">({{project.status}})</small>
+                                    {% endif %}</a>
+                                    <p class="text-lg font-light px-4 my-2">{{project.description}}</p>
+                                    <a href="{{project.source_code}}" type="button" class="py-1 px-6 uppercase text-sm tracking-wide bg-dark-gray hover:bg-black">Source Code</a>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
                 </div>
             </div>
         </div>
