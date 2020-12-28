@@ -8,14 +8,7 @@
       "url": "https://zeta-library.herokuapp.com/",
       "status": "done"
     },
-    {
-      "name": "kuryana",
-      "description": "MDL Scraper API",
-      "image": "kuryana.png",
-      "source_code": "https://github.com/TheBoringDude/kuryana",
-      "url": "https://kuryana.vercel.app/",
-      "status": "done"
-    },
+
     {
       "name": "grue",
       "description": "A Serverless URL Shortener.",
@@ -56,20 +49,43 @@
       "url": "http://mymood-me.herokuapp.com/home",
       "status": "buggy"
     },
-    {
-      "name": "gagger",
-      "description": "A basic Meme Api.",
-      "image": "gagger.png",
-      "source_code": "https://github.com/TheBoringDude/gagger",
-      "url": "http://gagger.herokuapp.com/",
-      "status": "incomplete"
-    },
+
     {
       "name": "geezer",
       "description": "A simple random meme website.",
       "image": "geezer.png",
       "source_code": "https://github.com/TheBoringDude/geezer",
       "url": "https://geezer.vercel.app/",
+      "status": "done"
+    }
+  ],
+  "apis": [
+    {
+      "name": "kuryana",
+      "description": "MDL Scraper API",
+      "source_code": "https://github.com/TheBoringDude/kuryana",
+      "url": "https://kuryana.vercel.app/",
+      "status": "done"
+    },
+    {
+      "name": "gagger",
+      "description": "A basic Meme Api.",
+      "source_code": "https://github.com/TheBoringDude/gagger-serverless",
+      "url": "https://gagger-serverless.vercel.app",
+      "status": "done"
+    },
+    {
+      "name": "magna",
+      "description": "Simple MANHWA, MANHUA, MANHWA scraper Api.",
+      "source_code": "https://github.com/TheBoringDude/magna",
+      "url": "https://magna-sc.cf/",
+      "status": "done"
+    },
+    {
+      "name": "meta-scraper-api",
+      "description": "Web API for scraping <meta> tags.",
+      "source_code": "https://github.com/TheBoringDude/meta-scraper-api",
+      "url": "https://c8ndo9.deta.dev",
       "status": "done"
     }
   ]

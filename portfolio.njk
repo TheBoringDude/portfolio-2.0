@@ -39,6 +39,25 @@
                         {% endfor %}
                     </div>
                 </div>
+                <!-- api services -->
+                <div class="py-4">
+                    <h2 class="text-center text-xl font-black tracking-wide uppercase underline">API Services</h2>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 my-4">
+                        {% for project in webapps.apis %}
+                            <div class="bg-bland flex p-3 flex-col xs:flex-row md:flex-col lg:flex-row items-center justify-center transform transition-transform duration-500 hover:scale-110">
+                                <div class="text-light-gray h-full w-full px-0 text-center md:text-center md:px-0 xs:text-left lg:text-left py-4 md:py-4 xs:py-0 lg:py-0 xs:px-3 lg:px-6">
+                                    <a href="{{project.url}}" class="text-xl xl:text-2xl font-black tracking-wide hover:underline">{{project.name}} {% if project.status == "buggy" %}
+                                        <small class="text-red-800">({{project.status}})</small>
+                                    {% elif project.status == "incomplete" %}
+                                        <small class="text-orange-800">({{project.status}})</small>
+                                    {% endif %}</a>
+                                    <p class="text-lg font-light px-4 my-2 truncate">{{project.description}}</p>
+                                    <a href="{{project.source_code}}" type="button" class="py-1 px-6 uppercase text-sm tracking-wide bg-dark-gray hover:bg-black">Source Code</a>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
                 <hr class="border-mid-gray">
                 <!-- websites -->
                 <div class="py-4">
